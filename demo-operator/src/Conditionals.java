@@ -69,22 +69,22 @@ public class Conditionals {
 
     int score = 89;
     char grade = ' ';
-    
+
     if (score >= 90) { // false
       grade = 'A'; // NOT execute
-    } else if (score >= 80) { // true, or can write as (score >= 80 && score <= 89) is also doing the same thing, it is more clear which it would easier to maintain if there has a lot to maintain 
+    } else if (score >= 80) { // true, or can write as (score >= 80 && score <= 89) is also doing the same thing, it is more clear which it would easier to maintain if there has a lot to maintain
       grade = 'B'; // execute
     } else if (score >= 70) { // no checking
-      grade = 'B'; 
+      grade = 'B';
     } else if (score >= 60) { // no checking
-      grade = 'B'; 
+      grade = 'B';
     } else { // no checking
-      grade = 'F'; 
+      grade = 'F';
     }
     // grade? > B
 
     int age = 65;
-    boolean isElderly = age >= 65; // true 
+    boolean isElderly = age >= 65; // true
 
     if (isElderly) { // instead of using age >= 65, which you may not get the meaning when you read it
       System.out.println("your ticket price is $2");
@@ -96,10 +96,50 @@ public class Conditionals {
     // instead of write if (age >= 65) { ticket price = 2}
     // set a boolean to check age >=65 is elderly
     // then set if (isElderly) { ticket price = 2}
-    // which it is a good programming style that looks more readable to the business scope 
+    // which it is a good programming style that looks more readable to the business scope
     // simply write (if age >= 65) may not able to get the meaning behind when you read the line
 
     // switch
+    // Simple version
+    int dayOfWeek = 1;
+    String dayName = "";
+    switch (dayOfWeek) {
+      case 1:
+        dayName = "Monday";
+        System.out.println(1);
+      //  break;
+      case 2:
+        dayName = "Tuesday";
+        System.out.println(2);
+       // break;
+      case 3:
+        dayName = "Wednesday";
+        System.out.println(3);
+       // break;
+      case 4:
+        dayName = "Thursday";
+        System.out.println(4);
+       // break;
+      case 5:
+        dayName = "Friday";
+        System.out.println(5);
+       break;
+      case 6:
+        dayName = "Saturday";
+        System.out.println(6);
+      //  break;
+      case 7:
+        dayName = "Sunday";
+        System.out.println(7);
+      //  break;
+    }
+
+    System.out.println("dayName=" + dayName); 
+    // Sunday? becuase in Switch, it will execute all the code until the the Switch code block end, it won't leave until you give a command to leave
+    // After add break, it will leave the switch code block after it meet the case, Wednesday
+
+    // benefit of switch is it is clear enough to read and understand at once, so it would be better to do something can understand immediately when read it 
+
   }
 
 }
