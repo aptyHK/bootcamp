@@ -37,9 +37,9 @@ public class TestForD3 {
     System.out.println(year1 % 100);
     System.out.println(year1 % 400);
   
-
+   // If a year is divisible by 4 and not divisible by 100 or divisible by 400
   for (int year5 = 1900; year5 <= 2400; year5++) {
-    if (year5 % 4 == 0 && year5 % 100 != 0 || year5 % 100 == 0 && year5 % 400 == 0) {
+    if (year5 % 4 == 0 && year5 % 100 != 0 || year5 % 400 == 0) {
       System.out.print(year5 + " ");
     }
   }
