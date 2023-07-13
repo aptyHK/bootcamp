@@ -34,7 +34,7 @@ public class JavaQuest4 {
         }
       }
 
-      if (printCounter > 9) {
+      if (printCounter == 10) {
         break;
       }
     }
