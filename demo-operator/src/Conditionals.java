@@ -107,39 +107,94 @@ public class Conditionals {
       case 1:
         dayName = "Monday";
         System.out.println(1);
-      //  break;
+        break;
       case 2:
         dayName = "Tuesday";
         System.out.println(2);
-       // break;
+        break;
       case 3:
         dayName = "Wednesday";
         System.out.println(3);
-       // break;
+        break;
       case 4:
         dayName = "Thursday";
         System.out.println(4);
-       // break;
+        break;
       case 5:
         dayName = "Friday";
         System.out.println(5);
-       break;
+        break;
       case 6:
         dayName = "Saturday";
         System.out.println(6);
-      //  break;
+        break;
       case 7:
         dayName = "Sunday";
         System.out.println(7);
-      //  break;
+        break;
     }
-
-    System.out.println("dayName=" + dayName); 
     // Sunday? becuase in Switch, it will execute all the code until the the Switch code block end, it won't leave until you give a command to leave
     // After add break, it will leave the switch code block after it meet the case, Wednesday
 
-    // benefit of switch is it is clear enough to read and understand at once, so it would be better to do something can understand immediately when read it 
+    // benefit of switch is it is clear enough to read and understand at once, so it would be better to do something can understand immediately when read it
 
+
+    System.out.println("dayName=" + dayName);
+
+    char mcAnswer = 'C';
+    boolean isCorrect = false;
+    switch (mcAnswer) {
+      case 'A':
+        isCorrect = false;
+        break;
+      case 'B':
+        isCorrect = false;
+        break;
+      case 'C':
+        isCorrect = true;
+        break;
+      case 'D':
+        isCorrect = false;
+        break;
+    }
+
+    if (isCorrect) {
+      System.out.println("Correct!");
+    } else {
+      System.out.println("Incorrect QQ");
+    }
+
+    char grade2 = 'B';
+    int pocketMoney = 0;
+    String specialPresent = "";
+    switch (grade2) {
+      case 'A':
+        pocketMoney += 1000;
+        specialPresent = "Gundam figure";
+        break;
+
+      case 'B':
+        pocketMoney += 100;
+        specialPresent = "a steak meal";
+        break;
+
+      case 'C':
+        pocketMoney += 50;
+        specialPresent = "Candy";
+        break;
+
+      case 'D':
+        pocketMoney += 10;
+        break;
+
+      default:
+        pocketMoney += 5;
+    }
+
+    System.out.println("pocket money = " + pocketMoney);
+    if (!(specialPresent.equals(""))) {
+      System.out.println(
+          "You will also get a special present which is..." + specialPresent + "!");
+    } 
   }
-
 }
