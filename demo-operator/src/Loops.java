@@ -79,7 +79,7 @@ public class Loops {
     int sumWithoutdividableBy3 = 0;
     for (int i = 0; i < 10; i++) {
 
-      if (i % 2 == 1) { // all odd number 
+      if (i % 2 == 1) { // all odd number
         sum += i;
         System.out.println("i is: " + i + " and current sum is: " + sum);
       }
@@ -90,16 +90,20 @@ public class Loops {
 
       if (i % 2 == 1 && i % 3 != 0) {
         sumWithoutdividableBy3 += i;
-        System.out.println("i is: " + i + " and current sum no dividable by 3 is: " + sum);
+        System.out.println(
+            "i is: " + i + " and current sum no dividable by 3 is: " + sum);
       }
     }
     System.out.println("Final sum is: " + sum); // 25
     System.out.println("Final sum without 5 is: " + sumWithout5); // 20
-    System.out.println("exclude all number that can divide by 3: " + sumWithoutdividableBy3); // 20
+    System.out.println(
+        "exclude all number that can divide by 3: " + sumWithoutdividableBy3); // 20
 
     for (int i = 0; i < 5; ++i) {
       System.out.println("hello");
-      if (i > 2); {
+      if (i > 2)
+        ;
+      {
         break;
       }
     }
@@ -110,7 +114,93 @@ public class Loops {
     // i = 3, hello
     // break;
 
-    
+    // continue
+    for (int i = 0; i < 6; i++) {
+      System.out.println("Hello " + i);
+      if (i > 3) {
+        continue; // go to the next iteration
+      }
+      System.out.println("bye " + i);
+    }
+
+    //
+    // i = 0; i < 6 -> hello 0, not i > 3 -> bye 0
+    // i++; i = 1; i < 6 -> hello 1, not i > 3 -> bye 1
+    // i++; i = 2; i < 6 -> hello 2, not i > 3 -> bye 2
+    // i++; i = 3; i < 6 -> hello 3, not i > 3 -> bye 3
+    // i++; i = 4; i < 6 -> hello 4, i > 3 -> (continue go to the next iteration)
+    // i++; i = 5; i < 6 -> hello 5, i > 3 -> (continue go to the next iteration)
+    // i++; i = 6; !(i < 6) -> exit
+
+    // find number that can divisible by both 2 and 3
+    for (int i = 0; i < 20; i++) {
+      if (i % 2 == 0 && i % 3 == 0 && i != 0) {
+        System.out.print(i + " ");
+      }
+    }
+
+    System.out.println("");
+
+    // find number that can divisible by 5 or 11
+    for (int i = 0; i < 100; i++) {
+      if (i != 0) {
+        if (i % 5 == 0 || i % 11 == 0) {
+          System.out.print(i + " ");
+        }
+      }
+    }
+
+    // nested loop
+    for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 3; j++) {
+        System.out.println("Hello");
+      }
+    } // how many hello?
+
+    // i = 0, j = 0, hello
+    // i = 0, j = 1, hello
+    // i = 0, j = 2, hello
+    // i = 0, j = 3, exit the inner loop with j
+    // i = 1, j = 0, hello
+    // i = 1, j = 1, hello
+    // i = 1, j = 2, hello
+    // i = 1, j = 3, exit the inner loop with j
+    // i = 2, j = 0, hello
+    // i = 2, j = 1, hello
+    // i = 2, j = 2, hello
+    // i = 2, j = 3, exit the inner loop with j
+    // i = 3, j = 0, hello
+    // i = 3, j = 1, hello
+    // i = 3, j = 2, hello
+    // i = 3, j = 3, exit the inner loop with j
+    // i = 4, exit the outer loop with i
+
+    for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < i + 1; j++) {
+      //  System.out.print("*");
+      }
+     // System.out.println("");
+    }
+
+
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+
+    // not allow System.out.print("*");
+
+
+
+    for (int i = 0; i < 5; i++) {
+      String starDisplay = "";
+      
+      for (int j = 0; j < i + 1; j++) {        
+        starDisplay = starDisplay + "*";        
+      } 
+      System.out.println(starDisplay);     
+    }
 
   }
 }
