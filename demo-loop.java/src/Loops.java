@@ -177,9 +177,9 @@ public class Loops {
 
     for (int i = 0; i < 5; i++) {
       for (int j = 0; j < i + 1; j++) {
-      //  System.out.print("*");
+        // System.out.print("*");
       }
-     // System.out.println("");
+      // System.out.println("");
     }
 
 
@@ -195,12 +195,33 @@ public class Loops {
 
     for (int i = 0; i < 5; i++) {
       String starDisplay = "";
-      
-      for (int j = 0; j < i + 1; j++) {        
-        starDisplay = starDisplay + "*";        
-      } 
-      System.out.println(starDisplay);     
+
+      for (int j = 0; j < i + 1; j++) {
+        starDisplay += "*";
+      }
+
+      System.out.println(starDisplay);
+
+      if (i == 4) {
+
+        for (int k = i; k > 0; k--) {
+          starDisplay = "";
+          for (int l = 0; l < k; l++) {
+            starDisplay += "*";
+          }
+          System.out.println(starDisplay);
+        }
+      }
     }
+
+
+
+    // String starDisplay = "";
+
+    // for (int i = 0; i < 5; i++) {
+    // starDisplay += "*";
+    // System.out.println(starDisplay);
+    // }
 
   }
 }
