@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Example Output Second Max = 230

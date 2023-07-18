@@ -108,6 +108,8 @@ public class Array {
     bytes[2] = 6;
     System.out.println(Arrays.toString(bytes));
     // output: [0 0 6 0 0 0]
+    String abc = Arrays.toString(bytes);
+    System.out.println(abc.length()); // length is 18, which also counting the [] and ,
     
 
 
