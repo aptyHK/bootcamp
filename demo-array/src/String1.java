@@ -27,6 +27,7 @@ public class String1 {
       System.out.println("Yes, it is HELLO");
     }
 
+    // **************
     // substring() -> substring(x) or substring(x, y)
     // x - start index: just like normal index
     // y - end index: represents the position of (last index - 1); Or may be end with which length of the String

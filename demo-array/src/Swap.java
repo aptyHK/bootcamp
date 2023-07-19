@@ -12,7 +12,7 @@ public class Swap {
     }
 
     System.out.println("hello!");
-    System.out.println(SwapOddEvenCharacter("aabbcc"));
+    System.out.println(SwapOddEvenCharacter("abcdefg"));
   }
 
   public static int[] swapFirstLast(int[] list) {
@@ -40,6 +40,6 @@ public class Swap {
       }
       str += char1[i];
     }
-    return str;
+    return String.valueOf(char1);
   }
 }
