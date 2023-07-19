@@ -37,11 +37,11 @@ public class JavaQuest10 {
         my_array[i] = my_array[i - 1];
       }
       my_array[indexPosition] = newValue;
-    } else if (indexPosition >= my_array.length) {  // when the inputted index (>= 10) is larger than the last index (my_array[9]) for this array
-      // return original array -> which is do no change
-    } else { // e.g. entered negative index
-      System.out.println("please enter a valid index!");
-    }
+    } else {
+      // when the inputted index is negative or (>= 10) is larger than the last index (my_array[9]) for this array
+      // return original array -> which is do no change      
+    } 
+   
     System.out.println("New Array: " + Arrays.toString(my_array));
   }
 }
