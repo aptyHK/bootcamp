@@ -31,15 +31,15 @@ public class InsertionSort {
 
     for (int i = 0; i < nums.length - 1; i++) { // number of round should be array length - 1
 
-      temp = nums[i + 1]; // 1
+      temp = nums[i + 1]; // the number that I want to check on each round
       index = i;
 
-      while (temp < nums[index]) {
-        nums[index + 1] = nums[index];
-        nums[index] = temp;
-        index--;
+      while (temp < nums[index]) { // always compare that I want to check on this round with the index pos
+        nums[index + 1] = nums[index]; // swap
+        nums[index] = temp; // swap
+        index--; // shift the index to the left
 
-        if (index == -1) {
+        if (index == -1) { // when I rech to the beginning of the array
           break;
         }
       }

@@ -24,9 +24,9 @@ public class JavaQuest12 {
     int[] answers2 = twoSum(new int[] {3, 2, 4}, 6); // {3, 2, 4} is the dataset, 6 is the target to sum
     int[] answers3 = twoSum(new int[] {3, 3}, 7); // {3, 3} is the dataset, 7 is the target to sum
 
-    System.out.println(Arrays.toString(answers));
-    System.out.println(Arrays.toString(answers2));
-    System.out.println(Arrays.toString(answers3));
+    // System.out.println(Arrays.toString(answers));
+    // System.out.println(Arrays.toString(answers2));
+    // System.out.println(Arrays.toString(answers3));
 
   }
 
@@ -34,23 +34,20 @@ public class JavaQuest12 {
   // target
   public static int[] twoSum(int[] arr, int target) {
 
-    // if arr legnth is 4
-    // round 0 compare the target with -> arr[0]+arr[1], arr[0]+arr[2], arr[0]+arr[3]
-    // round 1 compare the target with -> arr[1]+arr[2], arr[1]+arr[3]
-    // round 2 compare the target with -> arr[2]+arr[3]
+  int[] twoData = new int[] {-1, -1};
 
-
-    int[] twoNumbers = new int[] {-1, -1};
-
-    for (int i = 0; i < arr.length - 1; i++) { // control round 0 1 2
-      for (int j = i + 1; j < arr.length; j++) { // round 0: 1 2 3, round 1: 2, 3, round 2: 3
+    for (int i = 0; i < arr.length; i++) {
+      for (int j = i + 1; j < arr.length; j++) {
         if (arr[i] + arr[j] == target) {
-          twoNumbers[0] = i;
-          twoNumbers[1] = j;
-          return twoNumbers;
+          twoData[0] = i;
+          twoData[1] = j;
+          //System.out.println(twoData[0]);
+         // System.out.println(twoData[1]);
+          return twoData;
         }
       }
     }
-    return twoNumbers;
+    return twoData;
   }
+
 }
