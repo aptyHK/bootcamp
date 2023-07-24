@@ -3,15 +3,8 @@
 public class Helloworld {
   public static void main(String[] args) {
 
-
-    String str = "";
-
-    for (byte i = 127; i < 128; i++){
-    str += i;
-    if (i < 0) {
-    break;
-    }
-    System.out.println(str);
+System.out.println(Math.sqrt(2069870691));
+System.out.println(Math.pow(2, 31) -1);
 
     // //System.out.println(a*b);
     // System.out.println("I am Andy"); // end with semi-colon
@@ -21,4 +14,3 @@ public class Helloworld {
   }
 }
 
-}
