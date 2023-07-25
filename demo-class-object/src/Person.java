@@ -8,8 +8,8 @@ public class Person { // template, no execute function if only by its own
 
   // Describe the person by attributes
 
-  int age;
-  char gender; // week 6 -> ENUM
+  private int age; // always set incident variable to private
+  private char gender; // week 6 -> ENUM
 
 
   public boolean isMale() {
@@ -67,7 +67,7 @@ public class Person { // template, no execute function if only by its own
     p.setAge(13); // take object p, and execute with your defined method
     p.setGender('F');
 
-    System.out.println(p.age);
+    //System.out.println(p.age);
     System.out.println(p.getAge());
 
     System.out.println(p.isMale()); // non-static

@@ -32,5 +32,8 @@ public class Demo {
     // str is the object reference
     // but whwn you print the String, it give you the value hello directly????
     // ***Becuase it do not limit to premitive class / wrapper class 
+
+    Student s1 = new Student("Andy", "Yip", 18);
+    System.out.println(s1.fullName());
   }
 }
