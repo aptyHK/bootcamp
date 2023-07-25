@@ -58,9 +58,12 @@ public class Integer3 {
     Integer i8 = 127;
     System.out.println(i7 == i8);
 
-    Integer i9 = Integer.valueOf(128); // 127, would consider internal cache
+    Integer i9 = Integer.valueOf(128); // 128, would consider internal cache, same address
     Integer i10 = 128;
-    System.out.println(i9 == i10); // 
+    System.out.println(i9 == i10); // false
+
+    Integer i11 = new Integer(129);
+    Integer i12 = Integer.valueOf(129);
 
   }
 }
