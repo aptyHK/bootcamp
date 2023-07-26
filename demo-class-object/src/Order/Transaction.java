@@ -13,6 +13,12 @@ public class Transaction {
     this.unitPrice = unitPrice;
   }
 
+  // 1) on Transaction.java, write a method getSubtotal() -> don't do static and input raw data
+  
+  public double getSubtotal() {
+    return this.unitPrice * this.quantity; 
+  }
+
   public int getItemNo() {
     return this.itemNo;
   }
