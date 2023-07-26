@@ -16,11 +16,15 @@ public class Student {
   }
 
   public boolean isAdult() {
-    if (this.age >= 18) {
-      return true;
-    }
-    return false;
-  }
+    // if (this.age >= 18) {
+    //   return true;
+    // }
+    // return false; 
+    // ---
+    // return this.age >= 18 ? true : false;
+    return this.age >= 18;
+  } // if I want to protect the age of student not letting people know, I can remove get setter for age, 
+  // but I can still design method to show the necessary part
 
   // Behaviors / Methods
 

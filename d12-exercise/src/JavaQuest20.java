@@ -36,7 +36,11 @@ public class JavaQuest20 {
       }
     }
     return false;
-  }
+  } 
+  // ********** can try substring()
+      //   String shifted = s.substring(i).concat(s.substring(0, i));
+      // if (shifted.equals(goal)) {
+      //   return true;
 }
 
     // 0 1 2 3 4

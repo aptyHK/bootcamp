@@ -34,6 +34,6 @@ public class Demo {
     // ***Becuase it do not limit to premitive class / wrapper class 
 
     Student s1 = new Student("Andy", "Yip", 18);
-    System.out.println(s1.fullName());
+    System.out.println(s1.fullName()); // Andy Yip
   }
 }
