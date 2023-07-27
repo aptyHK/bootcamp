@@ -1,3 +1,5 @@
+import shape.Circle;
+
 public class StringBox { // StringBox -> a class
   private String string; // String -> also a class
 
@@ -55,6 +57,16 @@ public class StringBox { // StringBox -> a class
     return this.string;
   }
 
+
+
+  public char[] toCharArray() {
+    char[] chars = new char[this.string.length()];
+    for (int i = 0; i < chars.length; i++) {
+      chars[i] = this.string.charAt(i);
+    }
+    return chars;
+  }
+
   public static void main(String[] args) {
     StringBox s = new StringBox(); // empty constructor
     StringBox s2 = new StringBox();
@@ -80,5 +92,8 @@ public class StringBox { // StringBox -> a class
     // right: call createNewWith2Ele method under class StringBox -> use constructor to create 
     //        a new StringBox object and return it -> make the StringBox object to a string -> 
     //        assign to the left
+    s2.append("test toCharArray");
+    char[] oochar = s2.toCharArray();
+    System.out.println(String.valueOf(oochar));
   }
 }

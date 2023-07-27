@@ -81,6 +81,7 @@ public class ForEach {
     // vincent's aapproach
 
     String[] result = new String[spaceCount + 1];
+    Arrays.fill(result, ""); // assign "" to all element
     int startIndex = 0;
     int index = 0;
     for (int i = 0; i < str.length(); i++) {

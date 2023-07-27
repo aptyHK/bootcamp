@@ -5,6 +5,7 @@ public class Transaction {
   private ItemDesc itemDesc; // every item should have a description
   private int quantity; // how many of each item has been picked in the transcation
   private double unitPrice; // each item should have its price
+  // private Discount discount;
 
   public Transaction(int itemNo, ItemDesc itemDesc, int quantity, double unitPrice) {
     this.itemNo = itemNo;
