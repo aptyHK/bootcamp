@@ -24,9 +24,9 @@ public class Transaction {
     return this.itemNo;
   }
 
-  public ItemDesc getItemDesc() {
-    return this.itemDesc;
-  }
+  // public ItemDesc getItemDesc() {
+  //   return this.itemDesc;
+  // }
 
   public int getQuantity() {
     return this.quantity;
@@ -40,7 +40,7 @@ public class Transaction {
     this.itemNo = iNo;
   }
 
-  public void setItemDesc(String iDesc) {
+  public void setItemDesc(ItemDesc iDesc) {
     this.itemDesc = iDesc;
   }
 

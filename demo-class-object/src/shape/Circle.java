@@ -50,19 +50,5 @@ public class Circle {
 
   public void setRadius(int radius) {
     this.radius = radius;
-  }
-
-  // public static void main(String[] args) {
-  //   Circle c1 = new Circle();
-  //   c1.radius = 5; // even radius set private, but because now is in the same class, so can access. But it is not a good pratice
-  //   c1.setRadius(2);
-  //   System.out.println(c1.area());
-  //   System.out.println(c1.circumference());
-
-  //   Circle c2 = new Circle();
-  //   c2.setRadius(5);
-    
-  //   System.out.println(counter);
-  // }
-  
+  }  
 }
