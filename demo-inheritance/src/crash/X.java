@@ -28,7 +28,7 @@ public class X extends Y {
   public static void main(String[] args) {
     X x = new X("Peter");
     System.out.println(x.getName()); // Peter
-    
+    System.out.println(((Y) x).getName());
     // How to get "John"? 
     
     // can design name on both X and Y
@@ -51,6 +51,5 @@ public class X extends Y {
     Y.staticMethod(); // I am Y
     X.staticMethod(); // I am X
     System.out.println(y.getName()); // Tommy, not John
-    System.out.println(((Y) x).getName());
   }
 }
