@@ -1,7 +1,8 @@
 package Order;
 public class Order {
   
-  private Transaction[] transactions; // one order can have many transcations
+  private Transaction[] transactions; // order -> transactions, is a one to many relationship
+  // one order can have many transcations
 
   public Order(Transaction[] transactions) {
     // Pass by reference

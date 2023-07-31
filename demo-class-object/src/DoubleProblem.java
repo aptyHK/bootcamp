@@ -35,7 +35,7 @@ public class DoubleProblem {
     System.out.println(b.equals(b4)); // true
     System.out.println(b == b4); // false, only compare the reference
     System.out.println(b4.remainder(BigDecimal.valueOf(3)));
-    System.out.println(b4.remainder(BigDecimal.valueOf(3));
+    System.out.println(b4.remainder(BigDecimal.valueOf(3)));
     // new decimal do not apply internal cache theory
     // can simply treat it as a normal class
   
