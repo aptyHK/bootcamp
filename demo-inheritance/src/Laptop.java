@@ -1,3 +1,4 @@
+import java.util.Objects;
 import javax.crypto.Mac;
 
 public class Laptop extends Machine { // Laptop is a "Machine"
@@ -69,6 +70,17 @@ public class Laptop extends Machine { // Laptop is a "Machine"
 
   public void mute() {
     this.volume = 0;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (o == this)
+      return true;
+    if (!(o instanceof Laptop))
+      return false;
+    Laptop laptop = (Laptop) o;
+    return Objects.equals(laptop.keyboard, this.keyboard)
+        && Objects.equals(laptop.monitor, this.monitor);
   }
 
   //public static String staticMethod(String x, String y) {
