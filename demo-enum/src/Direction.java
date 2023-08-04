@@ -26,4 +26,15 @@ public enum Direction { // special keyword since Java 1.5
   public int getDegree() {
     return this.degree;
   }
+
+  public boolean isOppsite(Direction direction) {
+    return Math.abs(this.degree - direction.getDegree()) == 180; 
+  }
+
+  public static void main(String[] args) {
+    System.out.println(Direction.EAST.isOppsite(Direction.WEST)); // true
+    System.out.println(Direction.WEST.isOppsite(Direction.EAST)); // true
+    System.out.println(Direction.NORTH.isOppsite(Direction.SOUTH)); // true
+    System.out.println(Direction.NORTH.isOppsite(Direction.EAST)); // false
+  }
 }
