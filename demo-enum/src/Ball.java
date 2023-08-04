@@ -1,5 +1,7 @@
+import java.util.Objects;
+
 public class Ball {
-  Color color;
+  Color color; // if not use ENUM and use String instead, may be will have human input like R ED rED etc.
 
   public Ball(Color color) {
     this.color = color;
@@ -7,6 +9,16 @@ public class Ball {
 
   public Color getColor() {
     return this.color;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) 
+      return true;
+    if (!(o instanceof Ball))
+      return false;
+    Ball b = (Ball) o;
+    return this.color == b.color);
   }
 
   public static void main(String[] args) {

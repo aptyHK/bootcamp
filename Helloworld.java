@@ -8,6 +8,12 @@ public class Helloworld {
     String str = "abvcdfsd";
     System.out.println((char) (str.charAt(2)));
 
+    StringBuilder sb = new StringBuilder();
+    StringBuilder sb2 = new StringBuilder();
+    String s = sb.append("abc").toString();
+    String s2 = sb2.append("abc").toString();
+    System.out.println(s.equals(s2));
+
     // //System.out.println(a*b);
     // System.out.println("I am Andy"); // end with semi-colon
     // System.out.println("Hello!"); //end with semi-colon
