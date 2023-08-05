@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Game {
 
-  private String option; // store the option each player make in the game
   private Player[] players; // 1 game should have 2 or more players relationship
 
   public void prepareGame() {
