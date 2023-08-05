@@ -1,5 +1,7 @@
 package stonepaperscissors;
 
+// Not in use yet lol
+
 public enum GameOptions {
   STONE(1), //
   PAPER(2), //
