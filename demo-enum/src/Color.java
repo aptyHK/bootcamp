@@ -5,6 +5,8 @@ public enum Color {
   ;
 
   private String colorCode;
+  int counter = 0;
+  
 
   Color(String colorCode) {
     this.colorCode = colorCode;
@@ -12,5 +14,11 @@ public enum Color {
 
   public String getColorCode() {
     return this.colorCode;
+  }
+
+  public static void main(String[] args) {
+    //System.out.println(Color.counter);
+    // int age = Color.counter;
+    System.out.println(age);
   }
 }

@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Ball {
   Color color; // if not use ENUM and use String instead, may be will have human input like R ED rED etc.
-
+  private static char c = 'C';
   public Ball(Color color) {
     this.color = color;
   }
@@ -24,6 +24,7 @@ public class Ball {
   public static void main(String[] args) {
     Ball ball = new Ball(Color.RED);
     System.out.println(ball.getColor().name());
+    System.out.println(ball.c);
 
     // Object is topmost parent
     Object object = new Ball(Color.RED); // Object is reference
@@ -50,6 +51,10 @@ public class Ball {
       System.out.println("Color BLUE is instance of Color");
     }
 
+    if (Color.BLUE.getClass() == Color.class) {
+      System.out.println("Color BLUE is instance of Color");
+    }
+
     Object o = 1 - 'a'; // int -> Integer
     System.out.println(o.getClass().getName()); // Integer
 
@@ -58,6 +63,9 @@ public class Ball {
 
     Object o3 = new Ball(Color.GREEN);
     System.out.println(o3.getClass().getName()); // Ball
+
+    System.out.println(o3.getClass().isEnum()); // false
+    System.out.println(clas.isEnum()); // true;
 
 
   }
