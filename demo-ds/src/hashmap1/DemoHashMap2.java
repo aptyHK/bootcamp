@@ -52,5 +52,9 @@ public class DemoHashMap2 {
       System.out.println(book);
     }
 
+    HashMap<Integer, Integer> hMap = new HashMap<>();
+    hMap.put(1, 1);
+    System.out.println(hMap.put(1, 1));
+    System.out.println(hMap.put(1, 1));
   }
 }
