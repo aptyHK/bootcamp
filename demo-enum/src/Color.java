@@ -19,6 +19,6 @@ public enum Color {
   public static void main(String[] args) {
     //System.out.println(Color.counter);
     // int age = Color.counter;
-    System.out.println(age);
+    //System.out.println(age);
   }
 }
