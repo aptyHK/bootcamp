@@ -44,5 +44,8 @@ public class LinkedList1 {
       string += head.getStr();
       head = head.getNode(); // object reference
     }
+
+    String[] strs = new String[]{"10:00", "11:00"};
+    strs[0].replace(":", "");
   }
 }

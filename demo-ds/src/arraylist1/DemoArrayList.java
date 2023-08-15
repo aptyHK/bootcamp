@@ -2,7 +2,9 @@ package arraylist1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class DemoArrayList {
@@ -171,6 +173,16 @@ public class DemoArrayList {
     System.out.println(stringList2); // [hello, world, !, ijk]
     // Must remember because array -> ArrayList is a very frequently action in business world
 
+    //Test
+    Integer[] nums = new Integer[]{3, 3, 4, 4};
+    List<Integer> nums1 = new LinkedList<>(Arrays.asList(nums));
+
+    int i = (int) Math.sqrt(10);
+    System.out.println(i);
+
+    Collections.sort(nums1);
+
+    System.out.println(nums1);
     
   }
 }
