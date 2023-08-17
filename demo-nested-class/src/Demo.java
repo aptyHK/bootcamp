@@ -15,5 +15,13 @@ public class Demo {
 
     int shorterLength = Math.min(words1.length, words2.length);
     System.out.println(shorterLength);
+
+    Computer computer1 = Computer.builder() //
+    // .color(Color.BLACK) //
+    // .cpu("Intel i9") //
+    // .monitor("OLED") //
+    // .ram(32) //
+    // .instance() // 
+    .build();
   }
 }

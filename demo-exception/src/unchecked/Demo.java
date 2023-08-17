@@ -1,3 +1,4 @@
+package unchecked;
 public class Demo {
   public static void main(String[] args) {
 
@@ -5,7 +6,7 @@ public class Demo {
         System.out.println("Hello, World!");
         throw new CheckException();
     } catch (CheckException e) {
-
+      
     }
     
   }
