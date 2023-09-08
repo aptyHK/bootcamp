@@ -97,7 +97,11 @@ select group_id, player_id
 from (select ROW_NUMBER() OVER (PARTITION BY p.group_id ORDER BY j.total_score desc) as ROW_ID, p.group_id, p.player_id, j.total_score
 from joinallside j, players p
 where j.player_id = p.player_id) as partitioned
+<<<<<<< HEAD
 -- where partitioned.ROW_ID = 1
+=======
+where partitioned.ROW_ID = 1
+>>>>>>> 8c4d0cd98fa14a42d883c22417b68a207c4515ce
 ;
 
 
