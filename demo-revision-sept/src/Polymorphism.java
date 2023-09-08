@@ -37,7 +37,10 @@ public class Polymorphism {
         Orderable[] orders = new Orderable[] { new Customer("Peter"), new Driver() };
         // no problem, because both class did implement orderable
 
-        Orderable customers = getByName(orders, "Peter");
+        Orderable order = getByName(orders, "Peter"); // Customer
+        order.order();
+        Orderable order2 = getByName(orders, "Vincent"); // Driver
+        order2.order(); // above line returned a driver in the end, when driver call order(), counter (+3)
 
     }
 
@@ -49,6 +52,6 @@ public class Polymorphism {
                     return customer;
             }
         }
-        return null;
+        return new Driver();
     }
 }

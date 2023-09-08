@@ -1,0 +1,5 @@
+com\hkjava\bootcamp\PerClassTest.class
+com\hkjava\bootcamp\BeforeAfterAllTest.class
+com\hkjava\bootcamp\AppTest.class
+com\hkjava\bootcamp\BeforeAfterAllNoStaticTest.class
+com\hkjava\bootcamp\BeforeAfterTest.class
